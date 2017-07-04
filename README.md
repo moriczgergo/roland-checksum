@@ -1,4 +1,4 @@
-# roland-checksum
+# roland-checksum [![Build Status](https://travis-ci.org/moriczgergo/roland-checksum.svg?branch=master)](https://travis-ci.org/moriczgergo/roland-checksum)
 A lightweight module for calculating the Roland Checksum.
 
  * [x] No dependencies
