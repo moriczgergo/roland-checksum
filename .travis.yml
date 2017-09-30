@@ -9,11 +9,3 @@ node_js:
 before_script:
 - npm install --only=dev
 - npm install
-deploy:
-  provider: npm
-  email: greg@trofix.co
-  api_key:
-    secure: oZcZk31fZbbHzFo98UFFBZnHaWRQlLakgVhMGKD4JsmUeYehOnkqgUIQx1Ae+RKIyDqt82HOheOz36jd0W3IXhiSX3EdOPmoAkufa3lfeD56SAhCbA7G/IW7UXJoOte8WThWg748gb7ScjPY6+sP34RzRyXuLGTlFDe5+uHniR8Yq/tNulOeMcQ1eqszoqzpWsAWuqRzhTdCtfX0YwJviqIZnmUuFcclRBRiJjgL/oA90pqfb84L0TPFZIZCzpyevHdIGs0xKtzEe11+fzWDgL2dQmze9zsAN7c3c87nnDhajVmllTOSTMEx50cLavPcPG83s5CDdjpDHQxJ3J6mMdFI3NrU+boA4r0ebDFZ51aTZGyXJTGNlE7CNyC2AxVwQZ5d7gU9R3bMzcWtiEMJUcZIPWFYKBZzj5jVmeNcMsS8UNh+fD6k5ZroXp0b94UOTxSprzozq56mfesr93qeU/kAJKLA2CKXovLO+ZMhY1ITmk6yhdatL6hpVV5q9X9zeZ3qG+bu4NWe5jf8lMCXCb9FH8Q/2U8VrHhWTK+YHm2NJqEjiIGdaJSdGXXB5uHsP22TdkbfZqRqyD64/qstELKUcasd17LcCrODNw/ngqOmEPInpgIknVcXDPUJmeu+dEAlJ4udyz6pWYCNl/o3T77D2jvB7y5y/+kpFfQ5ZBQ=
-  on:
-    tags: true
-    repo: moriczgergo/roland-checksum
