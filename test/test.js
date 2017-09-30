@@ -7,18 +7,8 @@ describe("rolandChecksum()", function(){
 	it("should return a valid checksum when a number is passed", function(){
 		assert.equal(0x60, rolandChecksum(0x20));
 	});
-	it("should return -1 when a non-number value is passed", function(){
-		assert.equal(-1, rolandChecksum("hello"));
-		assert.equal(-1, rolandChecksum(true));
-		assert.equal(-1, rolandChecksum(NaN));
-	});
-	it("should return -1 when a non-integer number is passed", function(){
-		assert.equal(-1, rolandChecksum(0.1));
-		assert.equal(-1, rolandChecksum(Math.PI));
-		assert.equal(-1, rolandChecksum(Infinity));
-		assert.equal(-1, rolandChecksum(-Infinity));
-	});
-	it("should return -1 when a negative number is passed", function(){
-		assert.equal(-1, rolandChecksum(-1));
+	it("should return NaN when a non-number value is passed", function(){
+		assert.equal(true, isNaN(rolandChecksum("hello")));
+		assert.equal(true, isNaN(rolandChecksum(NaN)));
 	});
 });
