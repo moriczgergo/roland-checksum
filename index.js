@@ -1,24 +1,12 @@
 /**
  * Returns the calculated checksum from the passed data
  * @param {(Number[]|Number)} data The array of numbers to checksum
- * @returns {Number} Checksum, -1 if unknown parameter
+ * @returns {Number} Checksum
  */
-function calculate(data){
-	var checksum = 0x00;
-	
-	if (Array.isArray(data)){
-		data.forEach(function(number){
-			checksum += number;
-		});
-	} else if (!Number.isNaN(data) && Number.isInteger(data) && data >= 0) {
-		checksum = data;
-	} else {
-		return -1;
-	}
+module.exports = function (data) {
+	var checksum = Array.isArray(data) ? data.reduce((a, b) => a + b, 0) : data; // If input is array, sum array. Otherwise, use input.
 
 	checksum %= 128;
 	checksum = 128 - checksum;
 	return checksum;
 }
-
-module.exports = calculate;
