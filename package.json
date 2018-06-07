@@ -7,11 +7,12 @@
   "author": "skiilaa",
   "license": "GPL-3.0",
   "devDependencies": {
+    "standard": "11.0.1",
     "mocha": "3.4.2",
     "nyc": "11.0.3"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "standard && mocha",
     "coverage": "nyc --reporter=html --reporter=text mocha"
   }
 }
