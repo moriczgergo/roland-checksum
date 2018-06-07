@@ -3,7 +3,7 @@ A lightweight module for calculating the Roland Checksum.
 
  * [x] No dependencies
  * [x] 100% code coverage
- * 12 lines of code
+ * 6 lines of code
 
 ## Installation
 `npm install roland-checksum` or `yarn add roland-checksum`
