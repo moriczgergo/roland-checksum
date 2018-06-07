@@ -1,3 +1,5 @@
+/* eslint-env mocha */
+
 var assert = require('assert')
 var rolandChecksum = require('./../index.js')
 describe('rolandChecksum()', function () {
